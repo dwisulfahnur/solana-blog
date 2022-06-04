@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
     const post = await getPostById(params.pid)
     return {
         props: { post: post },
-        revalidate: 20,
+        revalidate: 10,
     }
 }
 
