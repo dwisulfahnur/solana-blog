@@ -7,7 +7,7 @@ solana_blog = "7dL8ES2WAcovHyRYmd9Z7MZk8uwnwR76mQ2Hs7BPSMuJ"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/Users/dwisulfahnur/.config/solana/id.json"
 
 [scripts]
