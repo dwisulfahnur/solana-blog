@@ -16,8 +16,15 @@ export default function BlogProvider({ children }) {
                 .catch(err => console.error(err))
         }
     }, [wallet])
+
+    const stateValue = {
+        user: user,
+        BLOG_KEY: BLOG_KEY,
+        PROGRAM_KEY: PROGRAM_KEY,
+        IDL: IDL
+    }
     return (
-        <BlogContext.Provider value={{ user: user, BLOG_KEY: BLOG_KEY, PROGRAM_KEY: PROGRAM_KEY, IDL: IDL }}>
+        <BlogContext.Provider value={stateValue}>
             {children}
         </BlogContext.Provider>
     );
