@@ -42,7 +42,7 @@ export default function PostDetail(props) {
             <div className="mb-4 px-8 py-4 bg-white rounded-b-lg rounded-t-0 shadow border-t">
                 {/* <a className="border rounded px-4 py-2"><img src="/solscan.png" />Proof of Post</a> */}
                 <div>
-                    <a className="flex items-center w-fit border rounded px-2 py-1 bg-indigo-700 hover:bg-indigo-800" target="_blank" href={`https://explorer.solana.com/address/${post.id}?cluster=${process.env.NEXT_PUBLIC_SOLANA_CLUSTER}`}>
+                    <a className="flex items-center w-fit border rounded px-2 py-1 bg-indigo-700 hover:bg-indigo-800" target="_blank" rel="noreferrer" href={`https://explorer.solana.com/address/${post.id}?cluster=${process.env.NEXT_PUBLIC_SOLANA_CLUSTER}`}>
                         <img src="/solana-explorer.png" className="inline mr-2 h-5" /><span className="text-lg font-semibold text-white">Proof of Post</span>
                     </a>
                 </div>
