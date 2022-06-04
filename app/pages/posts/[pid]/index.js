@@ -22,8 +22,8 @@ export default function PostDetail(props) {
     return (
         <>
             <Head>
-                <title>{post.title}</title>
-                <meta property="og:title" content={post.title} key="title" />
+                <title>{post ? post.title : ''}</title>
+                <meta property="og:title" content={post ? post.title : ''} key="title" />
             </Head>
             <div className="mt-4 p-8 bg-white rounded-t-lg rounded-b-0 shadow">
                 {post ? (
