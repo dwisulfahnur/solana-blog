@@ -24,7 +24,7 @@ export default function PostDetail(props) {
                 <>
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-2xl font-semibold">{post.title}</h2>
-                        {showAction ? <PostAction id={post.id} menus={["edit", "delete"]} /> : ''}
+                        {showAction ? <PostAction pid={post.id} menus={["edit", "delete"]} /> : ''}
                     </div>
 
                     <p>{post.content}</p>

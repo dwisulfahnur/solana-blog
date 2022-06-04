@@ -11,7 +11,7 @@ import {
   DotsHorizontalIcon,
 } from '@heroicons/react/solid'
 
-const PostAction = ({ pid, menus, onDelete }) => {
+const PostAction = ({ pid, menus }) => {
   const [menuList, setMenuList] = useState(menus ? menus : [])
 
   const router = useRouter()
