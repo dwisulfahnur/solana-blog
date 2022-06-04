@@ -1,7 +1,8 @@
 import { useAnchorWallet } from "@solana/wallet-adapter-react"
 import { getPostsByUserId } from "../utils/post"
-import UserPostList from "../components/UserPostList"
 import { useEffect, useState } from "react"
+import UserPostList from "../components/UserPostList"
+import Head from "next/head"
 
 export default function MyPosts() {
     const [posts, setPosts] = useState()
@@ -14,5 +15,14 @@ export default function MyPosts() {
         }
     }, [wallet])
 
-    return (<UserPostList posts={posts} />)
+    return (
+        <>
+            <Head>
+                <title>My Posts</title>
+                <meta property="og:title" content="Decentralized Blog" key="title" />
+            </Head>
+            <UserPostList posts={posts} />
+        </>
+
+    )
 }
