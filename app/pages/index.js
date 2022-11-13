@@ -16,11 +16,10 @@ const Home = (props) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const posts = await getAllPosts()
   return {
     props: { posts: posts },
-    revalidate: 10,
   }
 }
 
